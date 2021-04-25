@@ -4,6 +4,7 @@ body {
   height: 100vh;
   margin: 0;
   font-family: "Poppins", sans-serif;
+  // overflow-y: hidden;
 }
 ul {
   list-style-type: none;
@@ -51,7 +52,7 @@ header {
     a {
       display: block;
       padding: 6px 12px;
-      &.selected {
+      &.active {
         border-radius: 4px;
         background-color: rgba(255, 255, 255, 0.16);
       }
@@ -73,14 +74,12 @@ header {
     background-color: rgba(255, 255, 255, 0.9);
   }
 }
-.container-wrapper {
+
+.container-header {
   height: 280px;
   background: #525198;
   padding: 0px 70px;
   color: #ffffff;
-}
-
-.container-header {
   display: grid;
   // flex-direction: row;
   .container-top {
@@ -126,5 +125,126 @@ header {
       text-decoration: none;
     }
   }
-  // container-header ends
+}
+.primary-badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px 14px;
+  border: 1px solid #54509d;
+  border-radius: 4px;
+}
+// container-header ends
+
+//container starts
+.container-wrapper {
+  background: #f6f8fc;
+}
+.app-container {
+  margin-top: 109px;
+  padding: 0px 70px;
+  height: 500px;
+  display: flex;
+}
+.action-container {
+  flex: 30%;
+}
+.action-heading {
+  color: #495057;
+  h4 {
+    margin-bottom: 24px;
+  }
+}
+.actions {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 30px;
+  grid-column-gap: 28px;
+  padding: 0px 10px;
+  p {
+    margin: 0px !important;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+.action-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  width: 150px;
+  background: #54509d;
+  border-radius: 8px;
+  color: #ffffff;
+  &:hover {
+    color: black;
+  }
+}
+.selected {
+  background: #f1b31c;
+}
+.main-content {
+  flex: 70%;
+  padding-left: 30px;
+  .content-heading {
+    color: #495057;
+  }
+}
+
+// table avatar
+.avatar {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+// table mail section
+.tr-mail {
+  color: #adb5bd;
+  font-size: 14px;
+}
+
+//banner
+.banner-container {
+  padding: 0px 70px;
+  background: #f6f8fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    margin-top: 40px;
+    height: 300px;
+    width: 100%;
+  }
+}
+
+//footer
+.footer-wrapper {
+  background: #f6f8fc;
+  padding: 0px 70px;
+}
+.footer-content {
+  padding: 40px 0px;
+  p {
+    font-size: 13px;
+  }
+}
+.footer-left {
+  float: left;
+}
+.footer-right {
+  float: right;
+}
+
+// style for demo component
+.demo-component {
+  padding: 0px 70px;
+  background: #f6f8fc;
+
+  img {
+    margin-top: 40px;
+    height: 600px;
+    width: 100%;
+  }
 }
