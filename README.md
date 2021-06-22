@@ -1,4 +1,8 @@
+![sample-image](https://raw.githubusercontent.com/Zubayer94/fintech-app/main/src/assets/img/home-layout.png)
+
 # FinTech App
+
+A simple Fichtech one page web application with ReactJS by using this figma UI design: [Figma Demo UI](https://www.figma.com/file/xVjgaNjJEIppeEkA2kGgrx/Front-end-Developer-Test-Scenario?node-id=0%3A1) . Used react functional components, hooks, react-router-dom. For managing state used context api. Tried to use design pattern with the latest ReactJS features and made the UI user friendly.
 
 ## Available Scripts
 
@@ -26,3 +30,5 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+
